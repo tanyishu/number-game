@@ -8,30 +8,72 @@ h2 {
   text-align: center;
 }
 
+p {
+  text-align: center;
+}
 
-/*table, th, td {
-   border: 1px solid black;
-   border-collapse: collapse;
+body {
+  background-color: #03C9A9;
+}
 
-}*/
+
+td {
+  border: 1px solid white;
+  width: 33.3%;
+  border-radius: 15px;
+}
 
 .tpunish {
-  border: 1px solid black;
   width: 100%;
+  height: 300px;
   align: center;
   text-align: center;
+  color: white;
+  border-radius: 15px;
 }
 
 button {
 
+  width: 100px;
+  font-size: 1.1em;
+
 }
 
 .bstart {
-
+  border-radius: 10px;
+  color: white;
+  background-color: #F62459;
+  font-family: Comic Sans MS;
+  float: right;
 }
 
 .block {
+  float: right;
+  border-radius: 10px;
+  color: white;
+  background-color: #F62459;
+  font-family: Comic Sans MS;
+}
 
+.brestart {
+  border-radius: 10px;
+  color: white;
+  background-color: #F62459;
+  font-family: Comic Sans MS;
+  float: right;
+}
+
+.bempty {
+  width:100px;
+}
+
+.hit {
+  border-radius: 10px;
+  color: white;
+  background-color: #F62459;
+  font-family: Comic Sans MS;
+  font-size: 1em;
+  text-align: center;
 }
 
 .p1 {
@@ -41,4 +83,63 @@ text-align: center;
 .p2 {
 float: right;
 text-align: center;
+}
+
+.player {
+  display:flex;
+  justify-content: space-between;
+}
+
+.player1 {
+  width: 300px;
+  display: block;
+  font-size: 1.3em;
+}
+
+.player2 {
+  width: 300px;
+  display: block;
+  font-size: 1.3em;
+
+}
+
+
+#p1 {
+  text-align: center;
+}
+
+#p1hit {
+  text-align: center;
+}
+
+#p2 {
+  text-align: center;
+}
+
+#p2hit {
+  text-align: center;;
+}
+
+#td13 {
+  border-width: 0px;
+}
+
+#td14 {
+  border-width: 0px;
+}
+
+#td15 {
+  border-width: 0px;
+}
+
+#td16 {
+  border-width: 0px;
+}
+
+#td17 {
+  border-width: 0px;
+}
+
+#td18 {
+  border-width: 0px;
 }

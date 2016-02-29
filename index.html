@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <head>
 <title>Number War With a Wicked Twist</title>
-<link rel='stylesheet' href="stylesheet/style.css">
-<script type="text/javascript" src="javascript/num.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400italic' rel='stylesheet' type='text/css'>
-</head>
+<link rel='stylesheet' href="stylesheet/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script defer type="text/javascript" src="javascript/num.js"></script>
 
+</head>
 
 <body>
 <h1>Number War With a Wicked Twist ! X_X</h1>
 <table class="tpunish">
   <tr>
-    <td>Knock On The Head With A Empty Bottle</td>
-    <td>Drinks is On The House</td>
-    <td>Lick Someone's Face</td>
+    <td id="td1">Knock On The Head With A Empty Plastic Bottle</td>
+    <td id="td2">Drinks is On The House</td>
+    <td id="td3">Lick Someone's Face</td>
   </tr>
   <tr>
-    <td>Smell Someone Armpit</td>
-    <td>Write Name In The Air Using Butt</td>
-    <td>Thousand Years Of Pain</td>
+    <td id="td4">Smell Someone's Armpit</td>
+    <td id="td5">Write Name In The Air Using Butt</td>
+    <td id="td6">Thousand Years Of Pain</td>
   </tr>
   <tr>
-    <td>1 Shot a Bottle Of Coke</td>
-    <td>Ear Flick</td>
-    <td>Hi 5 The TAs</td>
+    <td id="td7">1 Shot a Bottle Of Coke</td>
+    <td id="td8">Ear Flick</td>
+    <td id="td9">Hi 5 The TAs</td>
   </tr>
   <tr>
-    <td>Punish</td>
-    <td>Punish</td>
-    <td>Punish</td>
+    <td id="td10">Lunch Treat</td>
+    <td id="td11">Slap On The Backhand</td>
+    <td id="td12">1 Shot 1 Litre Of Milk</td>
+  </tr>
+  <tr>
+    <td id="td13"> </td>
+    <td id="td14"> </td>
+    <td id="td15"><button class="block">Lock</button></td>
+
+    <tr>
+    <td style="border-width:0px;"></td>
+    <td style="border-width:0px;"></td>
+    <td style="border-width:0px;"><button class="brestart">Restart</button><button class="bstart">Start</button></td>
   </tr>
 </table>
 
-<button class="bstart">Start</button>
-<button class="block">Lock</button>
 
-<table class="p1">
+
+<!-- <table class="p1">
   <tr>
     <td>Player 1</td>
     <td>Round 1</td>
@@ -46,9 +55,6 @@
   </tr>
 </table>
 
-<h2> Winner ! </h2>
-
-
 <table class="p2">
   <tr>
     <td>Player 2</td>
@@ -57,6 +63,30 @@
     <td>Round 3</td>
     <td>Total</td>
   </tr>
-</table>
+</table> -->
+
+<div class="player">
+  <div class="player1">
+    <nav id="p1">Player 1</nav>
+    <nav id="round">Round 1 Score Here</nav>
+    <nav id="round">Round 2 Score Here</nav>
+    <nav id="round">Round 3 Score Here</nav>
+    <nav id="round">Total Score Here</nav>
+    <nav id="p1hit"><button class="hit">Hit It</button></nav>
+  </div>
+
+  <div class="player1">
+      <nav id="p2">Player 2</nav>
+      <nav id="round">Round 1 Score Here</nav>
+      <nav id="round">Round 2 Score Here</nav>
+      <nav id="round">Round 3 Score Here </nav>
+      <nav id="round">Total Score Here</nav>
+      <nav id="p2hit"><button class="hit">Hit It</button></nav>
+  </div>
+</div>
+
+<h2> Winner ! </h2>
+<p>Display Winner Here</p>
+
 
 </body>
