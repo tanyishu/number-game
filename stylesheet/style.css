@@ -39,7 +39,7 @@ button {
 
 }
 
-.bstart {
+#bstart {
   border-radius: 10px;
   color: white;
   background-color: #F62459;
@@ -47,7 +47,7 @@ button {
   float: right;
 }
 
-.block {
+#block {
   float: right;
   border-radius: 10px;
   color: white;
@@ -55,7 +55,7 @@ button {
   font-family: Comic Sans MS;
 }
 
-.brestart {
+#brestart {
   border-radius: 10px;
   color: white;
   background-color: #F62459;
@@ -67,13 +67,24 @@ button {
   width:100px;
 }
 
-.hit {
+#p1hitb {
   border-radius: 10px;
   color: white;
   background-color: #F62459;
   font-family: Comic Sans MS;
   font-size: 1em;
   text-align: center;
+  display: none;
+}
+
+#p2hitb {
+  border-radius: 10px;
+  color: white;
+  background-color: #F62459;
+  font-family: Comic Sans MS;
+  font-size: 1em;
+  text-align: center;
+  display: none;  
 }
 
 .p1 {
@@ -91,8 +102,8 @@ text-align: center;
 }
 
 .player1 {
-  width: 300px;
-  display: block;
+  /*width: 300px;*/
+  /*display: block;*/
   font-size: 1.3em;
 }
 
