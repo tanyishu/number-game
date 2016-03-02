@@ -19,16 +19,16 @@ $(document).ready(function()
       var message = null;
       if (player1Score > player2Score)
       {
-        var winner = this.player1
-        var message = 'Winner is ' + winner
+        var winner = $("#p1").text();
+        var message = 'Winner is ' + winner;
       } else if (player1Score < player2Score)
       {
-        var winner = this.player2
-        var message = 'Winner is ' + winner
+        var winner = $("#p2").text();
+        var message = 'Winner is ' + winner;
       }
       else {
-        winner = 'Tie!'
-        message = "It's A Tie! Play Again!"
+        winner = 'Tie!';
+        message = "It's A Tie! Play Again!";
       }
       console.log(message);
       $('#winner').text(winner)
@@ -39,8 +39,8 @@ $(document).ready(function()
     }
   } // Game object
 
-  var game = new Game()
-  game.start()
+  var game = new Game();
+  game.start();
 
 
 var table = $('td');
@@ -65,12 +65,14 @@ lock.on('click',function()
 {
   for(var i = 0; i < 12; i++){
        table[i].removeEventListener('click', changeColor);
+       lock.hide();
      }
 })
 
 var start = $('#bstart');
 start.on('click',function() {
   p1hit.show();
+  start.hide();
 })
 
 var restart = $('#brestart');
@@ -88,21 +90,24 @@ var p1r2Value = random()
 var p1r3Value = random()
 var level = 1
 var p2hit =$('#p2hitb');
+var whowin =$('.whowin');
 
 p1hit.on('click',function() {
   if(level === 1) {
     document.getElementById("p1r1");
-    p1r1.innerText = "Round 1 :" + " " + p1r1Value;
+    $("#p1").text(this.player1);
+    p1r1.innerText = "Round 1 : "+ p1r1Value;
     p1hit.hide();
     p2hit.show();
   } else if (level === 2) {
     document.getElementById("p1r2");
-    p1r2.innerText = "Round 2 :" + " " + p1r2Value;
+    $("#p1").text(this.player1);
+    p1r2.innerText = "Round 2 : " + p1r2Value;
     p1hit.hide();
     p2hit.show();
   } else if (level === 3) {
     document.getElementById("p1r3");
-    p1r3.innerText = "Round 3 :" + " " + p1r3Value;
+    p1r3.innerText = "Round 3 : " + p1r3Value;
     p1hit.hide();
     p2hit.show();
   }
@@ -141,8 +146,9 @@ p2hit.on('click',function()
     var total1 = (p1r1Value + p1r2Value + p1r3Value);
     var total2 = (p2r1Value + p2r2Value + p2r3Value);
 
+    whowin.show();
 
-    game.gameOver(total1, total2)
+    game.gameOver(total1, total2);
 
     }
   })
