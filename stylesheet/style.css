@@ -3,26 +3,21 @@ h1 {
   font-family: 'Architects Daughter', cursive;
   font-size: 40px;
 }
-
 h2 {
   text-align: center;
 }
-
 p {
   text-align: center;
 }
-
 body {
-  background-color: #03C9A9;
+  background-color: #00b29E;
 }
-
-
 td {
-  border: 1px solid white;
+  border: 3px solid #52FFEB;
   width: 33.3%;
   border-radius: 15px;
+  margin: 10px;
 }
-
 .tpunish {
   padding-left: 150px;
   width: 90%;
@@ -33,12 +28,9 @@ td {
 }
 
 button {
-
   width: 100px;
   font-size: 1.1em;
-
 }
-
 #bstart {
   border-radius: 10px;
   color: white;
@@ -46,7 +38,6 @@ button {
   font-family: Comic Sans MS;
   float: right;
 }
-
 #block {
   float: right;
   border-radius: 10px;
@@ -54,7 +45,6 @@ button {
   background-color: #F62459;
   font-family: Comic Sans MS;
 }
-
 #brestart {
   border-radius: 10px;
   color: white;
@@ -62,11 +52,9 @@ button {
   font-family: Comic Sans MS;
   float: right;
 }
-
 .bempty {
-  width:100px;
+  width: 100px;
 }
-
 #p1hitb {
   border-radius: 10px;
   color: white;
@@ -76,7 +64,6 @@ button {
   text-align: center;
   display: none;
 }
-
 #p2hitb {
   border-radius: 10px;
   color: white;
@@ -86,78 +73,60 @@ button {
   text-align: center;
   display: none;
 }
-
 .p1 {
-text-align: center;
+  text-align: center;
 }
-
 .p2 {
-float: right;
-text-align: center;
+  float: right;
+  text-align: center;
 }
-
 .player {
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
-
 .player1 {
   padding-left: 150px;
   font-size: 1.3em;
 }
-
 .player2 {
   width: 300px;
   display: block;
   font-size: 1.3em;
-
 }
-
 #p1 {
-  margin-left:30px;
+  margin-left: 30px;
 }
-
 #p1hit {
   text-align: center;
 }
-
 #p2 {
   margin-left: 30px;
 }
-
 #p2hit {
   text-align: center;
-  margin-right: 120px;
+  margin-right: 150px;
 }
-
 #td13 {
   border-width: 0px;
 }
-
 #td14 {
   border-width: 0px;
 }
-
 #td15 {
   border-width: 0px;
 }
-
 #td16 {
   border-width: 0px;
 }
-
 #td17 {
   border-width: 0px;
 }
-
 #td18 {
   border-width: 0px;
 }
-
 ul {
-  list-style-type:none;
+  list-style-type: none;
 }
-
 .whowin {
   display: none;
 }
