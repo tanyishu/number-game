@@ -11,7 +11,7 @@ $(document).ready(function() {
     var displayPlayerNames = function() {
       $("#p1").text(this.player1);
       $("#p2").text(this.player2);
-      console.log("Names Entered & Ready");
+      console.log("Got The Names, Let's Go !");
     }
     this.gameOver = function(player1Score, player2Score) {
       var winner = null;
@@ -23,8 +23,8 @@ $(document).ready(function() {
         var winner = $("#p2").text();
         var message = 'Winner is ' + winner;
       } else {
-        winner = 'Tie!';
-        message = "It's A Tie! Play Again!";
+        winner = 'Tie! What Are The Chances ?';
+        message = "Tie Game";
       }
       console.log(message);
       $('#winner').text(winner)
